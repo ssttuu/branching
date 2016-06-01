@@ -1,0 +1,8 @@
+version: '2'
+services:
+  py:
+    image: stupschwartz/py
+    build: ./
+    volumes:
+      - ./src:/opt/branching
+    command: python branching.py
